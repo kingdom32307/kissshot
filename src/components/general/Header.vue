@@ -1,16 +1,16 @@
 <template>
   <div class="header-wrap">
-      <div class="left-contents">
+      <div class="left-header-contents">
           <div class="logo-wrap">
               <div class="logo" @click="top">
                   <img class="img" src="@/assets/logo.png">
               </div>
           </div>
       </div>
-      <div class="right-contents">
+      <div class="right-header-contents">
           <ul class="pages-wrap">
               <li class="text-wrap">
-                  <span class="text" @click="about">About</span>
+                  <span class="text" @click="access">Access</span>
               </li>  
               <li class="text-wrap">
                   <span class="text" @click="billiards">Billiards</span>
@@ -36,8 +36,8 @@ export default {
         top(){
             this.$router.push('/')
         },
-        about(){
-            this.$router.push('/about')
+        access(){
+            this.$router.push('/access')
         },
         billiards(){
             this.$router.push('/billiards')
@@ -59,7 +59,9 @@ export default {
 <style scoped>
 .header-wrap {
     height: 50px;
+    width: 100%;
     background-color: black;
+    display: flex;
 }
 
 .pages-wrap {
@@ -76,16 +78,13 @@ export default {
   cursor: pointer; 
 }
 
-.right-contents {
-    position: absolute;
-    top: 7px;
-    right: 0px;
-    width: 500px;
+.right-header-contents {
+    flex: auto;
+    width:35%;
 }
-.left-contents{
-    display: inline;
-    width: 200px;
-    /* margin: 0; */
+.left-header-contents{
+    flex: auto;
+    width:65%;
 }
 
 .logo-wrap{

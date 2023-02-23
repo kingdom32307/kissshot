@@ -1,9 +1,9 @@
 <template>
     <ul>
-        <li class="img-wrap"><a href="#1"><img src="@/assets/kissshot.png"></a></li>
-        <li class="img-wrap" style="animation-delay: 3.5s"><a href="#2"><img src="@/assets/b1.png"></a></li>
-        <li class="img-wrap" style="animation-delay: 7s"><a href="#3"><img src="@/assets/b2.png"></a></li>
-        <li class="img-wrap" style="animation-delay: 10.5s"><a href="#4"><img src="@/assets/d1.png"></a></li>
+        <li class="img-wrap"><a href="#1"><img src="@/assets/kissshot.png" class="img-slider"></a></li>
+        <li class="img-wrap" style="animation-delay: 3.5s"><a href="#2"><img src="@/assets/b1.png" class="img-slider"></a></li>
+        <li class="img-wrap" style="animation-delay: 7s"><a href="#3"><img src="@/assets/b2.png" class="img-slider"></a></li>
+        <li class="img-wrap" style="animation-delay: 10.5s"><a href="#4"><img src="@/assets/d1.png" class="img-slider"></a></li>
     </ul>
 </template>
 
@@ -40,5 +40,9 @@ ul:hover li{
 }
 li:first-child{
     position:relative;
+}
+
+.img-slider{
+    width: 31%;
 }
 </style>

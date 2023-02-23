@@ -4,16 +4,19 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
   </div>
+  <Footer/>
 </template>
 
 <script>
 import Header from './general/Header.vue'
 import SliderCSS from './general/SliderCSS.vue'
+import Footer from "../components/general/Footer.vue";
 export default {
   name: 'Top',
   components: {
     Header,
     SliderCSS,
+    Footer,
 },
   props: {
     msg: String
